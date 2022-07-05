@@ -1,0 +1,38 @@
+Public class Olamundo {
+    //private
+    String senha, email, nome;
+    
+    //SET E GET
+    public void setEmail (string novoEmail){
+    email = novoEmail;
+       }   
+    public void setNome (string novoNome){
+    nome = novoNome;
+       } 
+   
+    public void setsenha (string novasenha){
+      senha = novasenha;
+     }
+    public string getEmail(){
+        return email;    
+    }
+     public string getSenha(){
+        return senha;    
+    }
+     public string getNome(){
+        return nome;    
+    }
+}
+
+
+////////////////////////////////////////////////////////
+
+
+Olamundo pripub  = new Olamundo();
+pripub.setEmail('luz.com');
+pripub.setsenha('1234');
+pripub.setNome('Roberta e Cecilia');
+
+system.debug(pripub.getEmail());
+system.debug(pripub.getNome());
+system.debug(pripub.getSenha());
