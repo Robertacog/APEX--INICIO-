@@ -1,0 +1,175 @@
+public class Escola {
+/*2. Escreva uma classe que representa Alunos. A classe deve guardar os seguintes
+dados do aluno: matrícula, nome, 2 notas de prova e 1 nota de trabalho, todos são
+atributos públicos. Escreva os seguintes métodos para esta classe:
+mediaFinal - calcula a média final do aluno e retornar o seu valor
+atingiuMedia - calcula quantos pontos faltam para atingir a média. 
+Se a média final for igual ou superior a 7, retornar 0, senão retornar quantos pontos faltam
+para 7.*/
+    public integer nota1;
+    public integer trabalho  ;   
+    public integer nota2;
+    public string  matricula = '4545'; 
+    public integer mediaFinal;
+    public integer atingiuMedia; 
+    
+    public integer mediaFinal (integer nota1, integer nota2, integer trabalho){ 
+     mediaFinal = ((nota1 + nota2 + trabalho)/3);
+    return mediaFinal;
+    }  
+    public decimal atingiuMedia ( integer mediaFinal ){
+        if (mediaFinal >= 7){
+           return (0);
+            }else{ 
+              return (7 - mediaFinal);
+            }
+            
+        }
+        
+        
+    }
+    
+    public class Person {
+
+     string nome;
+     integer dataDeNascimento, idade;
+     decimal altura;
+    
+    public void getNome() {
+        System.debug('Nome: ' + nome);
+    }
+    
+    public void getData() {
+        System.debug('Dados de nascimento: ' + dataDeNascimento);
+    }
+    
+    public void getAltura() {
+        System.debug('Altura: ' + altura);
+    }
+    
+    public void setNome(string novoNome) {
+        nome = novoNome;
+    }
+    
+    public void setData(integer dia, integer mes, integer ano) {
+        dataDeNascimento = Date.newInstance (ano, mes, dia);
+    }
+    
+    public void setAltura(decimal novaAltura) {
+        altura = novaAltura;
+    }
+    
+    public void exibirDataNasc() {
+       integer idade = dataDeNascimento.daysBetween(Date.today()) / 365;
+        system.debug(nome + ' tem ' + idade + ' anoS de idade');
+    }    
+}
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+OBJETO 
+
+
+Person pessoa = new Person();
+pessoa.setNome('');
+pessoa.setData(-,-,----);
+pessoa.setAltura(1.--);
+pessoa.getNome();
+pessoa.getData();
+pessoa.getAltura();
+pessoa.exibirDataNasc();
+
+
+public class Data {
+ /*4. Crie uma classe Data que inclua três atributos privados: mês (inteiro), dia (inteiro) e
+ano (inteiro). Crie métodos:
+a. Métodos set e get de cada atributo, aceitando apenas os valores ditos abaixo
+para cada atributos (sets), caso contrário emitir mensagem de erro:
+i. mes - 1 a 12
+ii. dia - 1 a 31
+iii. ano - 1900 a 2199
+b. Método setData que recebe 3 parâmetros e que atribui valores para os 3
+atributos, da classe. Respeitando os valores aceitos, caso contrário emita
+erro tbm.
+c. método mostrarData, esse método imprime a data separado por ‘ - ‘*/
+
+public class Data {
+ /*4. Crie uma classe Data que inclua três atributos privados: mês (inteiro), dia (inteiro) e
+ano (inteiro). Crie métodos:
+a. Métodos set e get de cada atributo, aceitando apenas os valores ditos abaixo
+para cada atributos (sets), caso contrário emitir mensagem de erro:
+i. mes - 1 a 12
+ii. dia - 1 a 31
+iii. ano - 1900 a 2199
+b. Método setData que recebe 3 parâmetros e que atribui valores para os 3
+atributos, da classe. Respeitando os valores aceitos, caso contrário emita
+erro tbm.
+c. método mostrarData, esse método imprime a data separado por ‘ - ‘*/
+    
+    private integer dia;
+    private integer mes;
+    private integer ano;
+    
+   
+        public void setDia(integer novoDia) {
+        if (novoDia >= 1 && novoDia <= 31) {
+            dia = novoDia;
+        } else {
+            System.debug('Dia incorreto, por favor digite um dia válido');
+        }
+    }
+     public void getDia() {
+        System.debug(dia);
+    }
+   
+   
+    public void setMes(integer novoMes) {
+        if (novoMes >= 1 && novoMes <= 12) {
+            mes = novoMes;
+        } else {
+            System.debug('Mês incorreto, por favor digite um mês válido');
+        }
+    }
+     public void getMes() {
+        System.debug(mes);
+    }
+     
+    public void setAno(integer novoAno) {
+        if (novoAno >= 1990 && novoAno <= 2199) {
+            ano = novoAno;
+        } else {
+            System.debug('Ano invalido, por favor digite um ano válido');
+        }
+    }
+    
+    public void getAno() {
+        System.debug(ano);
+    }
+    public void setData(integer novoDia, integer novoMes, integer novoAno) {
+        setDia(novoDia);
+        setMes(novoMes);
+        setAno(novoAno);
+    }
+    
+    public void mostrarData() {
+        System.debug('Data: ' + dia + ' - ' + mes + ' - ' + ano);
+    }
+}
+
+|||||||||||||||||||||||||||||||||||||||||||||||
+
+OBJETO 4
+
+ Data dat = new Data();
+
+dat.setDia(22);
+dat.setMes(11);
+dat.setAno(1991);
+
+dat.getDia();
+dat.getMes();
+dat.getAno();
+dat.setData(3, 12, 1990);
+dat.mostrarData();
+
+
+
