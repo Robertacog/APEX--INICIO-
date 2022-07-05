@@ -1,0 +1,23 @@
+//Exercício 1
+
+List<string> Bandas = new List<String> {'Nirvana','Pearl jam','Alice in chair'} ;     
+  System.debug (Bandas);
+  Bandas.remove(0);
+  Bandas.remove(1);
+  System.debug (Bandas);
+Bandas.add ('Silverchair');
+Bandas.add ('judas priest');
+Bandas.add ('Angra');
+Bandas.add ('Dio');
+  System.debug (Bandas);
+
+//Exercício 2
+
+/*Crie uma classe Chamada Operacao  
+com dois atributos decimais publicos (valorA, valorB) 
+a classe deve conter 4 métodos:  somar() 
+- imprima a soma de valorA, valorB  subtrair() 
+- imprima a subtração de valorA, valorB  dividir() 
+- imprima a divisão de valorA, valorB  multiplicar() 
+- imprima a multiplicação de valorA, valorB   
+Após a construção da classe, crie objetos para testarem as operações da classe.*\
