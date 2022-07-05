@@ -1,0 +1,134 @@
+1 - QUESTÃO CLASSE
+
+Public class Gato {
+
+    public String raca ;
+    public Decimal peso;
+  
+    
+  
+    public void miar(){
+        System.debug(nome + ' MIAAAAAAUUUUUUUUU');
+    }    
+  
+    public void Andar(){
+        System.debug(nome + 'está andando');
+    }  
+    
+    public void roronar(){
+        System.debug(nome + ' está roronando');
+    }
+    
+   
+    public void imprimirGato(){
+        System.debug('Nome: ' + nome);
+        System.debug('Raça: ' + raca);
+        System.debug('Peso:' + peso + ' Kg');
+    }
+}
+
+
+///////////////////////////////////////////////////////
+
+1 - QUESTÃO OBEJETO 
+
+Gato Gatogalatico = new Gato();
+
+Gatogalatico.nome = 'Lilica';
+Gatogalatico.raca = 'Marrozinho mesmo';
+Gatogalatico.peso = 10;
+Gatogalatico.miar ();
+Gatogalatico.Andar();
+Gatogalatico.roronar ();
+Gatogalatico.imprimirGato();
+
+
+
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+2 - QUESTÃO CLASSE
+
+public class Pizzaria {
+
+//declara os atributos(caracteríticas), variáveis
+//[modificador de acesso] [tipoDeDado] [nomeVariavel];
+    
+    public void pedir(string pizza){        
+        if (pizza == 'Calabresa'){
+            System.debug ('A pizza de Clabreza é R$ 45,00');
+        }else if ( pizza == '4 Queijos'){ 
+                System.debug(' A pizza 4 Queijos é R$ 50,00');
+         }else if (pizza == 'Maria Bonita'){
+                    System.debug ( 'A pizza Maria Bonita é R$ 60,00');    
+        } else {
+            System.debug ( 'Chefe, só temos três sabores. Choros, choro, choro.');       
+    }
+} 
+     }
+
+    public void pedir(string pizza){        
+        if (pizza == 'Calabresa'){
+            System.debug ('A pizza de Clabreza é R$ 45,00');
+        }else if ( pizza == '4 Queijos'){ 
+                System.debug(' A pizza 4 Queijos é R$ 50,00');
+         }else if (pizza == 'Maria Bonita'){
+                    System.debug ( 'A pizza Maria Bonita é R$ 60,00');    
+        } else {
+            System.debug ( 'Chefe, só temos três sabores. Choros, choro, choro.');       
+    }
+} 
+     }
+
+2 - QUESTÃO OBEJETO 
+
+//classe objeto = new classe ();
+Pizzaria PizzariaMineira = new Pizzaria();
+pizzaria.pedir('Calabresa');
+pizzaria.pedir('4 Queijos');
+pizzaria.pedir('Maria Bonita');
+
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+3 - QUESTÃO CLASSE
+
+public class CalculadoraMagica {
+
+    public integer somar(integer i, integer y){
+        return i + y;
+    }
+    public integer subtrair (integer i, integer y){
+       return i - y;
+    }
+    public integer dividir (integer i, integer y){
+       return i / y;
+    }
+    public integer Multiplicar(integer i, integer y){
+       return i * y;
+    }
+    public integer quadradoDeA(integer i) {
+        return i * i; }      
+    public integer quadradoDeA(integer y) {
+        return y * y;   }   
+    public string aMaior(integer i, integer y) {
+        if ( i > y) {
+            return 'I é maior que Y';
+        }else{
+            return 'I não é maior que Y'; }
+     public integer media(integer i, integer y) {
+        return (i + y) / 2;
+       }
+
+CalculadoraMagica calculadoraDamagia = new CalculadoraMagica();
+
+System.debug(calculadoraDamagia.somar(22, 22)); 
+System.debug(calculadoraDamagia.subtrair(33, 33)); 
+System.debug(calculadoraDamagia.dividir(44, 44)); 
+System.debug(calculadoraDamagia.multiplicar(55, 55)); 
+System.debug(calculadoraDamagia.quadradoDeA(10, 20)); 
+System.debug(calculadoraDamagia.quadradoDeB(5, 10)); 
+System.debug(calculadoraDamagia.aMaior(5, 20)); 
+System.debug(calculadoraDamagia.aMaior(10, 5)); 
+System.debug(calculadoraDamagia.media(22, 22)); 
+
