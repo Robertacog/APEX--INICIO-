@@ -1,0 +1,48 @@
+
+// Criar um variavel do tipo inteiro 
+// e passar um valor se o numero for maior que zero 
+// imprimir 'numero positivo'
+ 
+/*Criar duas variaveis que leia duas notas n1 e n2, calcule a média e verificar
+se a media é maior ou igual a 7 e menor que 10, imprimir parabens você foi aprovado
+Se a media igual a 10
+imprimir você manja demais em
+Senão, imprimir não foi dessa vez
+*/
+
+integer  n1 = 22
+         n2 = 33
+    if(num > 0){
+        system.debug('Número positivo');
+    }else if(n == 0){
+        system.debug('O valor é zero');
+    }else{
+        system.debug('Não foi desse vez');
+  
+
+
+
+
+/Criar duas variaveis que leia duas notas n1 e n2
+//Calcular a média 
+//Verificar se a media é maior ou igual a 7 e menor que 10
+//Imprimir 'parabens voce foi aprovado'
+//Media for igual a 10: 'voce manja demais'
+//Senão 'Nao foi dessa vez'
+
+decimal n1 = 9.0;
+decimal n2 = 8.5;
+    
+    decimal nf = (n1 + n2)/2;
+    
+    if (nf >=7 && nf < 10){ system.debug('Parabéns você foi aprovado');}
+Else if (nf == 10){system.debug('Você Manja demais');}
+else {system.debug('Não foi dessa vez');}
+
+
+//crie um algoritmo que imprima na tela valores de 5 a 500.
+for(integer c = 1; c <= 100; c = c + 5 ){
+//ou for(integer c = 1; c <= 500; c= c+500)
+    System.debug(c);
+}
+System.debug('Sai do loop');
