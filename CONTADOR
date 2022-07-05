@@ -1,0 +1,26 @@
+public class Contador {
+
+	Integer contador = 0;
+    
+    public void zerar(){
+        contador = 0;
+       System.debug(contador);
+    }
+    
+    public void incrementar(){
+        contador++;
+        System.debug(contador);
+    }
+    
+    public void imprimir(){
+        System.debug('Contador: ' + contador);
+    }
+   }
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ OBJETO QUESTÃO 1
+
+Contador contadora = new Contador();
+contadora.zerar();
+contadora.incrementar();
+contadora.imprimir();
