@@ -1,0 +1,50 @@
+// QUESTÃO 1
+
+List<string> Serie = new List<String>() ;
+
+Serie.add('Dark');
+Serie.add('Black Mirror');
+Serie.add('A maltição');
+Serie.add('Westworld');
+Serie.add('The Umbrella Academy');
+Serie.add('Euphoria');
+Serie.add('SuperNatural');
+Serie.add('The Walking Dead');
+System.debug (Serie);
+
+integer contador = 1;
+for (string ranking: Serie){
+    system.debug(contador + ' - ' + ranking);
+    contador ++;
+}
+
+
+
+// QUESTÃO 2
+
+
+Map<string,string> mamacocorp = new Map<string,string>();
+
+mamacocorp.put('key','valor');
+mamacocorp.put('empresa','mamacorp');
+mamacocorp.put('ceo','RomeroBrito');
+mamacocorp.put('valor','8000000');
+mamacocorp.put('CNPJ','1233210001.99');
+
+system.debug('A empresa '+ mamacorp.get('empresa')+' alcançou o valor de mercado de '+ mamacorp.get ('valor')+'.');
+system.debug (' O CEO '+ mamacocorp.get('ceo')+ ' declaro ser o primeiro passo para dominar o mundo. ' );
+
+
+// QUESTÃO 3
+
+Set <String> TurmaBC21 = new set <String> {'Bruno','Rawana','Alyce','Tamires','Joaquim','Jorge','Cristian','Tayna','Luana','Thairys'};
+
+System.debug(TurmaBC21.contains('Bruno'));
+System.debug(TurmaBC21.contains('Rawana'));
+System.debug(TurmaBC21.contains('Alyce'));             
+
+TurmaBC21.add('Ralffer');
+TurmaBC21.add('Pedro');
+TurmaBC21.add('Marcos');
+
+System.debug(TurmaBC21);
