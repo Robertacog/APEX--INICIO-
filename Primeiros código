@@ -1,0 +1,137 @@
+1.Escreva um algoritmo que defina um valor inteiro e escreva na tela seu valor. *
+
+Integer valor = 2 ;
+System.debug (valor);
+
+2. Escreva um algoritmo que tenha nome de produto e preço exiba na tela os valores. *
+
+String NomeDeProduto = ‘Livro’;
+Double preco = 50 ;
+System.debug(NomeDeProduto);
+System.debug(‘R$' + preco);
+
+3. Escreva um algoritmo que defina um valor inteiro e escreva (na tela) o seu
+antecessor. *
+
+integer b = 66;
+system.debug('O valor do antecessor de' + b + é' + (--b));
+
+4. Escreva um algoritmo que tenha dois valores reais, some os valores e exiba o
+resultado. *
+
+integer valor1 = 10;
+integer valor2 = 10;
+interger valor3 = valor1 + valor2;
+system.debug('A soma dos valores é: ' valor3);
+
+
+5. Escreva um algoritmo que receba uma idade, subtraia do ano atual e exiba o
+resultado, mostrando ‘Nascido em (valorDaSubtração)’. *
+
+Date dt = DateTime.now();
+system.debug (dt);
+integer idade = 31;
+integer anoAtual = 2022;
+//integer.valueOf(dt.format('yyyy'));
+integer valorDaSubstracao = anoAtual - idade;
+system.debug ('Nascido em ' + valorDaSubtracao);
+
+6. Escreva um algoritmo para definir as dimensões de um retângulo (base e altura),
+calcular e escrever a área do retângulo. *
+
+integer base = 20;
+integer base = 5;
+integer areaReatangulo = base * altura;
+system.debug ("A área do retângulo é: ' +areaRetangulo);
+
+
+7. Escreva um algoritmo para definir o salário mensal atual de um funcionário e o
+percentual de reajuste de 25%. Calcular e escrever o valor do novo salário com o
+acréscimo do reajuste. *
+
+decimal salario = 1000.0;
+decimal reajusteSalario = (salario * 25) / 100;
+decimal novoSalario = salario + reajusteSalario ;
+system.debug(' Novo salario = R$' + novoSalario);
+
+8. Escreva um algoritmo que atribua 3 notas, calcule a média e exiba o resultado. *
+
+integer nota1 = 10;
+integer nota2 = 10;
+integer nota3 = 10;
+integer mediaNotas = nota1 + nota2 + nota3 / 3;
+system.debug(' O valor da Média é:' mediaNotas);
+
+9. Faça um algoritmo que define três notas de um aluno, calcule e escreva a média
+final deste aluno. Considerar que a média é ponderada e que o peso das notas é 2,
+3 e 5. Fórmula para o cálculo da média final é: *
+
+integer nota1;
+integer nota2;
+integer nota3;
+mediaPonderada = (((nota1*2) + (nota2*3)+(nota3*5)/10/3);
+System.debug (mediaPonderada).stescale(2));
+
+
+/Criar duas variaveis que leia duas notas n1 e n2
+//Calcular a média 
+//Verificar se a media é maior ou igual a 7 e menor que 10
+//Imprimir 'parabens voce foi aprovado'
+//Media for igual a 10: 'voce manja demais'
+//Senão 'Nao foi dessa vez'
+
+decimal n1 = 9.0;
+decimal n2 = 8.5;
+    
+    decimal nf = (n1 + n2)/2;
+    
+    if (nf >=7 && nf < 10){ system.debug('Parabéns você foi aprovado');}
+Else if (nf == 10){system.debug('Você Manja demais');}
+else {system.debug('Não foi dessa vez');}
+
+
+    /*Criar duas variaveis que leia duas notas n1 e n2, calcule a média e verificar
+se a media é maior ou igual a 7 e menor que 10, imprimir parabens você foi aprovado
+Se a media igual a 10
+imprimir você manja demais em
+Senão, imprimir não foi dessa vez
+*/
+decimal  n1 = 10;
+decimal  n2 = 9;
+decimal mediaNota = ((n1 + n2) /2 );
+    if(mediaNota >= 7 && mediaNota < 10){
+        system.debug('parabens você foi aprovada');
+    }else if( mediaNota == 10 ){
+        system.debug('você manja demais');
+    }else{
+        system.debug('Não foi desse vez'); 
+    }   
+
+
+for(integer c = 1; c <= 5; c++   ){
+    System.debug(c);
+}
+
+System.debug('Sai do loop');
+
+
+Integer valor = 2 ;
+System.debug(valor);
+Valor = 6;
+Valor 15;
+
+
+Integer salario = 1000;
+Decimal reajusteSalario = salario* 1.25;
+System.debug(reajusteSalario);
+
+
+Decimal salario = 1000.0;fffff
+Decimal reajuste = (salario *25)	 100 ;
+Decimal novoSalario = salario + reajuste;
+System.debug (‘Novo salario = R$’+ novoSalario);
+
+
+
+
+string yguin = 'romer3o'; if(yguin == 'romero'){ system.debug('Romero brito e minha art'); }else{ system.debug('não e minha arte'); }
